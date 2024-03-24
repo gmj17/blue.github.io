@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/storybg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #229ced;
+    font-family: 'Cedarville Cursive', cursive;
+}
+nav{
+    flex:1;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(26, 167, 255);
+}
+
+.container {
+    padding: 5% 10%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #229ced;
+}
+
+p {
+    font-size: 1.2em;
+    color: #229ced;
+    margin: 20px 0;
+    line-height: 1.6;
+    text-shadow: red;
+}
+
+a {
+    text-decoration: none;
+    color: #229ced;
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: #0a7ec2;
+}
+

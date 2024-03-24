@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/futurebg.jpeg');
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Fixes the background image while scrolling */
+    color: #229ced; /* Sets text color to white, change it to your preference */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+}
+.logo{
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+nav{
+    flex:1;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #229ced;
+}
+.container {
+    padding: 5% 10%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #feffff;
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 100px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+}
+.education{
+    background-image: url('images/education.avif');
+}
+.travel{
+    background-image: url('images/travel.jpg');
+}
+.careers{
+    background-image: url('images/careers.jpg');
+}
+.fashion{
+    background-image: url('images/fashion.jpg');
+}
+.dream{
+    background-image: url('images/dream.jpg');
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color:#fff;
+    text-shadow: 0 0 5px #f90c0c;
+}
+.card p{
+    text-shadow: 0 0 5px #f60303;
+    font-size: 15px;
+}
+footer{
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    bottom: 0;
+    position: fixed;
+}

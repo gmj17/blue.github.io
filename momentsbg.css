@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/spmomentsbg.webp');
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Fixes the background image while scrolling */
+    color: #229ced; /* Sets text color to white, change it to your preference */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+}
+.logo{
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+nav{
+    flex:1;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #229ced;
+    font-size: 25px;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #e876f0;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    overflow: hidden;
+    position: relative; /* Adjusted */
+    z-index: -1; /* Ensure it's in the background */
+}
+
+video {
+    /* Ensure the video is responsive and covers the screen */
+    position: fixed;
+    min-width: 70%;
+    min-height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

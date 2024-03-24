@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/momentsbg.jpg');
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Fixes the background image while scrolling */
+    color: #229ced; /* Sets text color to white, change it to your preference */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+}
+.logo{
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+nav{
+    flex:1;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #f76de9;
+    font-size: 25px;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #229ced;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+}
+.moment1{
+    background-image: url('images/1moment.jpg');
+}
+.moment2{
+    background-image: url('images/2moment.jpg');
+}
+.moment4{
+    background-image: url('images/fflowers.jpg');
+}
+.moment3{
+    background-image: url('images/33moment.jpg');
+}
+.moment5{
+    background-image: url('images/5moment.jpg');
+}
+.moment6{
+    background-image: url('images/6moment.jpg');
+}
+.moment7{
+    background-image: url('images/moment7.jpg');
+}
+.moment8{
+    background-image: url('images/8moment.jpg');
+}
+.moment9{
+    background-image: url('images/9moment.jpg');
+}
+.moment10{
+    background-image: url('images/10moment.jpg');
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color:#fff;
+    text-shadow: 0 0 5px #f90c0c;
+}
+.card p{
+    text-shadow: 0 0 5px #f60303;
+    font-size: 15px;
+}
+footer{
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    bottom: 0;
+    position: fixed;
+}

@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/peoniesbg.jpg');
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Fixes the background image while scrolling */
+    color: #229ced; /* Sets text color to white, change it to your preference */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+}
+.logo{
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.video-overlay-container {
+    position: center;
+    width: 10%; /* or specific width; ensures the container spans a certain width */
+    max-width: 300px;
+    height: 0; /* Initial height set to 0 to not take up space */
+    z-index: 1; /* Ensure it's above other content but adjust as necessary */
+}
+.background-video {
+    position: absolute;
+    top: 25%; /* Center the video vertically */
+    left: 25%; /* Center the video horizontally */
+    transform: translate(-25%, -25%); /* Adjust based on video's dimensions to center it */
+    width: -5px; /* Set a fixed width for the video */
+    z-index: -2; /* Optional: Ensure video stays in the background */
+}
+nav{
+    flex:1;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(26, 167, 255);
+}
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 302px;
+}
+.navbar, .row, footer {
+    position: relative;
+    z-index: 2; /* Ensures these elements are above the video */
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #229ced;
+    font-size: 50px;
+}
+p{
+    color: #229ced;
+    font-size:25px;
+    line-height: 15px;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 20px;
+    padding: 10px 0;
+    background: #229ced;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+}
+.card1{
+    background-image: url('images/story.jpg');
+}
+.card2{
+    background-image: url('images/moments.jpg');
+}
+.card3{
+    background-image: url('images/future.jpg');
+
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color:#fff;
+    text-shadow: 0 0 5px #f90c0c;
+}
+.card p{
+    text-shadow: 0 0 5px #f60303;
+    font-size: 15px;
+}
+footer{
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    bottom: 0;
+    position: fixed;
+}
